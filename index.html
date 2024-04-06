@@ -248,7 +248,7 @@ What are you doing here?! you sneaky developer...
         </article>
         <p id="info-para" data-aos="fade-up" data-aos-delay="600">
           I'm a <b>Data Analyst/Engineer</b> working for manufacturing of A330 & A350 Airbus Aircraft ✈️<br></br> 
-          I mainly code with Python using basic libraries as Pandas, Numpy, Polars and actully PySpark to manage big amount of data.
+          I mainly code with Python using basic libraries as Pandas, Numpy, Polars and actually PySpark to manage big amount of data.
           I'm extremly currius in all topics link with data, web and CD/CI.
         </p>
         <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
@@ -299,7 +299,7 @@ What are you doing here?! you sneaky developer...
             </p>
             <br />
             <p tabindex="0">
-              I mainly code with Python using basic libraries as Pandas, Numpy, Polars and actully PySpark to manage big amount of data. <br></br>
+              I mainly code with Python using basic libraries as Pandas, Numpy, Polars and actually PySpark to manage big amount of data. <br></br>
               I'm extremly currius in all topics links with data, web and CD/CI.
               For exemple
               I develop and maintain my own Hadoop Cluster. I also create a very basic blockchain to understand how it works. I'm interested in dev-ops solutions (Docker, Github Actions...)
@@ -521,6 +521,42 @@ What are you doing here?! you sneaky developer...
 
       window.open(url, "_blank");
     }
+  </script>
+
+  <script>
+    const cursorInner = document.getElementById("cursor-inner");
+    const cursorOuter = document.getElementById("cursor-outer");
+    const links = document.querySelectorAll("a,label,button");
+
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorInner.style.left = `${posX}px`;
+      cursorInner.style.top = `${posY}px`;
+
+      // cursorOuter.style.left = `${posX}px`;
+      // cursorOuter.style.top = `${posY}px`;
+
+      cursorOuter.animate(
+        {
+          left: `${posX}px`,
+          top: `${posY}px`,
+        },
+        { duration: 500, fill: "forwards" }
+      );
+
+      links.forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+          cursorInner.classList.add("hover");
+          cursorOuter.classList.add("hover");
+        });
+        link.addEventListener("mouseleave", () => {
+          cursorInner.classList.remove("hover");
+          cursorOuter.classList.remove("hover");
+        });
+      });
+    });
   </script>
   <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="julien_marchadier" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="left" data-x_margin="18" data-y_margin="18"></script>
 </body>
