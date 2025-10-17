@@ -1210,16 +1210,15 @@ footer {
 }
 
 .image-div {
-    max-width: 50vw;
-    max-height: 60vh;
+    width: 50%;
+    height: 100%;
     padding-top: 70px;
     padding-left: 10px
 }
 
 .image-div img {
-    margin-bottom: 10%;
     height: 100%;
-    border-radius: 20px
+    border-top-left-radius: 30px
 }
 
 .ProjectHeading {
