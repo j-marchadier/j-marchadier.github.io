@@ -1,21 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- 
-
-██╗░░░██╗██╗███╗░░██╗░█████╗░██████╗░
-██║░░░██║██║████╗░██║██╔══██╗██╔══██╗
-╚██╗░██╔╝██║██╔██╗██║██║░░██║██║░░██║
-░╚████╔╝░██║██║╚████║██║░░██║██║░░██║
-░░╚██╔╝░░██║██║░╚███║╚█████╔╝██████╔╝
-░░░╚═╝░░░╚═╝╚═╝░░╚══╝░╚════╝░╚═════╝░
-░░░░░██╗░█████╗░███╗░░██╗░██████╗░██╗██████╗░
-░░░░░██║██╔══██╗████╗░██║██╔════╝░██║██╔══██╗
-░░░░░██║███████║██╔██╗██║██║░░██╗░██║██║░░██║
-██╗░░██║██╔══██║██║╚████║██║░░╚██╗██║██║░░██║
-╚█████╔╝██║░░██║██║░╚███║╚██████╔╝██║██████╔╝
-░╚════╝░╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝╚═════╝░
-What are you doing here?! you sneaky developer...
--->
 
 <head>
   <!-- Google tag (gtag.js) -->
@@ -414,6 +398,7 @@ What are you doing here?! you sneaky developer...
       </div>
     </section>
     <!-- skills section ends -->
+    <!-- Projects section starts -->
     <section class="projects-section-container" id="projects">
       <div class="projects-section-div">
         <div class="section-heading" data-aos="fade-up">
@@ -424,10 +409,97 @@ What are you doing here?! you sneaky developer...
         </div>
         <div class="project-boxes-div">
           <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box1" id="project-airbus">
+              <div class="info-div">
+                <img src="https://cdn.cookielaw.org/logos/67f35096-f18a-45a1-84a2-a83e00bd9540/2daa8fb4-3fd2-41bc-94b8-fe6ad3972f18/2d433c6f-80fd-4564-95cc-4a5bc829c0c3/AIRBUS_Blue.png" alt="Airbus project logo" class="faviconforProject" />
+                <article class="ProjectHeading">Airbus Defense & Space — Data Stack</article>
+                <div class="ProjectDescription">
+                  <p class="ProjectDescription2">
+                    During my 6-month internship at Airbus Defense & Space (Toulouse), I designed and implemented a complete <b>Data Stack</b> for the <b>Cost Engineering</b> team.
+                    The goal was to bring a <b>data-driven approach</b> to satellite cost estimation — transforming thousands of Excel files into live, visual dashboards.
+                  </p>
+                  <ul class="ProjectBullets">
+                    <li>📊 Built a custom <b>ETL pipeline</b> in Python to extract 2000+ Excel files (~30 GB).</li>
+                    <li>🏗️ Structured data into a <b>Data Warehouse</b> for historical cost analytics.</li>
+                    <li>📈 Created <b>interactive dashboards</b> (Qlik Sense) for cost synthesis, comparison & evolution.</li>
+                    <li>🛰️ Enabled Airbus teams to make <b>data-driven pricing decisions</b> for telecommunication satellites.</li>
+                  </ul>
+                </div>
+                <div class="project-buttons">
+                  <a href="src/pdf/Inrernship_Repport.pdf" target="_blank" class="cta">
+                    <span>View Report</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/pdf/Inrernship_Repport.pdf" alt="Data Stack pipeline diagram" />
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-blockchain">
+                <div class="info-div">
+                    <img src="src/png/logo_blockchain.jpg" alt="Python logo" class="faviconforProject" />
+                    <article class="ProjectHeading">Micro-Blockchain Implementation</article>
+                    <div class="ProjectDescription">
+                        <p class="ProjectDescription2">
+                            A custom-built, decentralized micro-blockchain developed in Python and Flask to gain a practical understanding of distributed ledger technology, Proof-of-Work, and network consensus.
+                        </p>
+                        <ul class="ProjectBullets">
+                            <li>🔐 Implemented <b>SHA-256 Hashing</b> for block integrity and a <b>Proof-of-Work</b> system to secure the chain (mining difficulty of '00').</li>
+                            <li>🛠️ Utilized the project as a hands-on learning experience to master the concepts of immutability, decentralization, and cryptography in a blockchain context.</li>
+                        </ul>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/j-marchadier/YOUR_BLOCKCHAIN_REPO" target="_blank" class="github-redirect"
+                            aria-label="Visit Blockchain Project on GitHub">
+                            <img src="src/svg/github.svg" alt="github redirect button" />
+                        </a>
+                    </div>
+                </div>
+                <div class="image-div">
+                    <img src="src/pdf/blockchain how it works.jpg" alt="Blockchain project preview image" />
+                </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box3" id="project-fireprotect">
+                <div class="info-div">
+                    <img src="./src/png/logo_ai.png" alt="Logo AI" class="faviconforProject" />
+                    <article class="ProjectHeading">FireProtect: Système de Prévention Incendie IoT & IA</article>
+                    <div class="ProjectDescription">
+                        <p class="ProjectDescription2">
+                            Conception et implémentation d'un système complet de détection prédictive des risques d'incendie, combinant des capteurs IoT, une base de données temporelle et un modèle d'Intelligence Artificielle.
+                        </p>
+                        <ul class="ProjectBullets">
+                            <li>💡 Déploiement d'un réseau de capteurs (ESP32) mesurant **CO2, COV, Température, Humidité** et **Détection de Traces** via le code Arduino (`ESP_32_1.ino`).</li>
+                            <li>📡 Mise en place d'une architecture **BLE** (Node.js sur Raspberry Pi) pour la collecte et l'enregistrement des données dans une base **InfluxDB** (Base de Données Temporelle).</li>
+                            <li>🧠 Entraînement de modèles de **Réseaux de Neurones Séquentiels (Keras)** pour la classification et la **prédiction du risque** en temps réel.</li>
+                            <li>🌐 Export du modèle au format **TensorFlow.js** en vue d'un déploiement sur une interface web/mobile pour l'alerte prédictive.</li>
+                        </ul>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/j-marchadier/YOUR_FIREPROTECT_REPO" target="_blank" class="github-redirect"
+                            aria-label="Visit FireProtect Project on GitHub">
+                            <img src="src/svg/github.svg" alt="github redirect button" />
+                        </a>
+                    </div>
+                </div>
+                <div class="image-div">
+                    <img src="http://googleusercontent.com/image_collection/image_retrieval/159466326765822136" alt="Diagramme de système IoT de détection incendie" />
+                </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="project-box-wrapper">
             <div class="project-box project-box2" id="project-box2">
               <div class="info-div">
                 <img src="src/webp/pexelicon-favicon.webp" alt="pexelicon website favicon" class="faviconforProject" />
-                <article class="ProjectHeading">In progress</article>
+                <article class="ProjectHeading">In progress2</article>
                 <p class="ProjectDescription">
                   In progress
                 </p>
@@ -451,6 +523,7 @@ What are you doing here?! you sneaky developer...
               </div>
             </div>
           </div>
+          <!-- Projects section end -->
           <!-- ---------------------- -->
           
           <!-- ---------------------- -->

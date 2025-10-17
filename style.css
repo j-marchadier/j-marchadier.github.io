@@ -356,7 +356,7 @@ noscript {
     background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
     backdrop-filter: blur(10px);
     height: 80px;
-    width: 80%;
+    width: 90%;
     padding: 0 20px;
     justify-content: space-between;
     z-index: 999;
@@ -579,7 +579,7 @@ noscript {
 .text-content {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 80%;
     height: 100%;
     align-items: flex-start;
     justify-content: center
@@ -953,13 +953,13 @@ noscript {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 200px
+    padding-top: 20px
 }
 
 .about-section,
 .projects-section-div,
 .skills-section {
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1008,7 +1008,7 @@ noscript {
 }
 
 .about-info {
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: column
 }
@@ -1042,7 +1042,7 @@ noscript {
 }
 
 .skills-section-container {
-    padding-top: 150px;
+    padding-top: 100px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -1176,7 +1176,9 @@ footer {
 
 .project-box {
     width: 100%;
-    height: 400px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1197,8 +1199,10 @@ footer {
 }
 
 .faviconforProject {
-    width: 30px;
-    border-radius: 50%
+    max-width: 70vw;
+    max-height: 10vh;
+    border-radius: 50%; 
+    background-color: #fff;
 }
 
 .faviconforProjectAquaregia {
@@ -1206,15 +1210,16 @@ footer {
 }
 
 .image-div {
-    width: 50%;
-    height: 100%;
+    max-width: 50vw;
+    max-height: 60vh;
     padding-top: 70px;
     padding-left: 10px
 }
 
 .image-div img {
+    margin-bottom: 10%;
     height: 100%;
-    border-top-left-radius: 30px
+    border-radius: 20px
 }
 
 .ProjectHeading {
@@ -1224,7 +1229,7 @@ footer {
 }
 
 .ProjectDescription {
-    color: gray;
+    color: rgb(189, 189, 189);
     font-size: 1.7rem;
     font-weight: 400
 }
